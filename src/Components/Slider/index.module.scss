@@ -1,0 +1,140 @@
+.banner_title, .banner_title_main{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 110%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner_title_main{
+    text-align: start;
+    width: 570px;
+}
+.banner_text, .banner_text_main{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+.banner_text_main{
+    text-align: start;
+}
+.banner_btn, .banner_btn_main{
+    cursor: pointer;
+    border: none;
+    padding: 10px 21.5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 110%;
+    color: #fff;
+    background: #FF6A16;
+    border-radius: 5px;
+}
+.slider_item{
+    background-color: rgba(0, 0, 0, 0.22);
+    position: relative;
+    height: 654px;
+
+    img{
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+    }
+}
+.banner_btn_main{
+    position: absolute;
+    left: 0;
+}
+.carusel_block{
+    div[class~=legend]{
+        opacity: 1 !important;
+    }
+}
+.next_arrow{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(-50%,0);
+}
+.next_arrow{
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 100;
+    cursor: pointer;
+    transform: translate(-50%,0);
+}
+.prev_icon{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%,0);
+    z-index: 100;
+    width: 20px;
+    cursor: pointer;
+    height: 40px;
+}
+@media screen and (max-width: 968px) {
+    .banner_text{
+        font-size: 14px !important;
+        margin-bottom: 18px;
+    }
+    .banner_btn{
+        padding: 14.5px 24px !important;
+        font-size: 12px;
+    }
+    .slider_item{
+        width: 100%;
+        height: 518px;
+
+        img{
+            height: 100%;
+            object-position: -300px;
+        }
+    }
+    .banner_text_main{
+        font-size: 14px !important;
+    }
+    .banner_title{
+        font-size: 28px !important;
+        margin-bottom: 8px !important;
+    }
+    .banner_title_main{
+        font-size: 28px !important;
+        margin-bottom: 8px !important;
+        width: 280px !important;
+    }
+    .prev_icon{
+        display: none;
+    }
+    .next_arrow{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .slider_item{
+        height: 418px;
+    }
+    .banner_text{
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        font-weight: 400 !important;
+    }
+    .banner_text_main{
+        font-size: 10px !important;
+        margin-bottom: 8px !important;
+        font-weight: 400 !important;
+    }
+    .banner_title{
+        font-size: 18px !important;
+        margin-bottom: 8px !important;
+    }
+    .banner_title_main{
+        font-size: 18px !important;
+        margin-bottom: 8px !important;
+    }
+}

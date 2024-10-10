@@ -1,0 +1,36 @@
+.wrapper{
+    padding: 40px 0;
+    background-color: #F9F9F9;
+}
+.contacts_title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-block: 16px;
+}
+.contacts_text{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 9px;
+    color: #4F4F53;
+}
+.num_link{
+    color: #4F4F53;
+}
+.map_wrap{
+    margin-top: 50px;
+    width: 1235px;
+    height: 523px;
+}
+@media screen and (max-width: 1500px){
+    .map_wrap{
+        width: 100%;
+        height: 100%;
+    }
+    .contacts_title{
+        font-size: 18px;
+    }
+    .wrapper{
+        background-color: #fff;
+    }
+}

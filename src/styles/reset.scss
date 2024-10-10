@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+    &::placeholder {
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+    }
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    width: calc(100vw - 400px);
+    margin: 0 auto;
+
+    @media screen and (max-width: 1700px) {
+        width: calc(100vw - 200px);
+    }
+    @media screen and (max-width: 1200px) {
+        width: calc(100vw - 80px);
+    }
+    @media screen and (max-width: 768px) {
+        width: calc(100vw - 60px);
+    }
+    @media screen and (max-width: 576px) {
+        width: calc(100vw - 30px);
+    }
+    @media screen and (max-width: 360px) {
+        width: calc(100vw - 20px);
+    }
+}
+.app_flow{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+button {
+    font-family: inherit;
+}
+a {
+    text-decoration: none;
+}
+.slider_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.carousel.carousel-slider .control-arrow {
+    &:hover{
+        background-color: transparent !important;
+    }
+    opacity: 1 !important;
+    padding: 50px !important;
+}

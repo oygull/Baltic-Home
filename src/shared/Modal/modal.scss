@@ -1,0 +1,41 @@
+:root {
+    overflow-y: auto;
+}
+.modal_filter {
+    z-index: 999;
+    padding: 0 25px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    
+    opacity: 0;
+    .filter_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        padding-top: 16px;
+        padding-bottom: 25px;
+        font-size: 26px;
+        line-height: 28px;
+        img {
+            right: 26px;
+            width: 13px;
+            height: 13px;
+        }
+    }
+}
+.active {
+    width: 100vw;
+    opacity: 1;
+    height: 100vh;
+    position: fixed;
+    :root {
+        overflow-y: hidden;
+    }
+}
